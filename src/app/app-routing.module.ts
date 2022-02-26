@@ -25,12 +25,12 @@ const routes: Routes = [
   { path: 'admin', component: BoardAdminComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'admin/tutoriales', component: ListaUsuariosComponent },
-  { path: 'admin/tutoriales/:id', component: UsuarioDetallesComponent },
+  { path: 'admin/tdoutoriales/:id', component: UsuarioDetallesComponent },
   {path: 'images', component: SearchImagesComponent},
   { path: 'mod/images', component: ListaImagenesComponent },
   { path: 'mod/images/:id', component: ImagenDetallesComponent },
   { path: 'mod/agregar', component: AgregarImagenComponent },
-  { path: '**', component:No404Component}
+  { path: '**', component:No404Component},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
